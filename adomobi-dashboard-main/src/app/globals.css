@@ -62,6 +62,34 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+    /* Map common teal/cyan utilities to the trackstart orange primary shades */
+    :root {
+      --primary-50: 18 93% 98%;
+      --primary-100: 18 93% 96%;
+      --primary-200: 18 93% 90%;
+      --primary-600: 18 93% 44%;
+      --primary-700: 18 93% 34%;
+      --primary-800: 18 93% 24%;
+      --primary-900: 18 93% 14%;
+    }
+
+    .text-teal-600 { color: hsl(var(--primary-600)) !important }
+    .text-teal-700 { color: hsl(var(--primary-700)) !important }
+    .text-teal-800 { color: hsl(var(--primary-800)) !important }
+    .text-teal-900 { color: hsl(var(--primary-900)) !important }
+
+    .bg-teal-50 { background-color: hsl(var(--primary-50)) !important }
+    .bg-teal-100 { background-color: hsl(var(--primary-100)) !important }
+    .bg-teal-200 { background-color: hsl(var(--primary-200)) !important }
+
+    .border-teal-200 { border-color: hsl(var(--primary-200)) !important }
+    .shadow-teal-100 { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.03), 0 4px 6px -4px rgba(0,0,0,0.02) !important }
+
+    .from-teal-600 { --tw-gradient-from: hsl(var(--primary-600)) !important }
+    .to-cyan-600 { --tw-gradient-to: hsl(var(--primary-700)) !important }
+    .focus\:ring-teal-500:focus { box-shadow: 0 0 0 3px rgba(247,97,30,0.15) !important }
+    .focus\:border-teal-500:focus { border-color: hsl(var(--primary-600)) !important }
 }
 
 @layer base {

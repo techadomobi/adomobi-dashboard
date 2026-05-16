@@ -6,6 +6,9 @@ const nextConfig = {
 	// Ensure assets are referenced correctly; assetPrefix can be adjusted
 	// if you serve assets from a CDN or different prefix.
 	assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX || "",
+	// Allow serving the app under a sub-path (e.g. /dashboard).
+	// Set NEXT_PUBLIC_BASE_PATH=/dashboard in Vercel if deploying under that route.
+	basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
 	
 	// Add security headers and allow cross-origin requests
 	async headers() {
