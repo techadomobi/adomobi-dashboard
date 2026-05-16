@@ -18,7 +18,7 @@ const nextConfig = {
 				headers: [
 					{
 						key: "Content-Security-Policy",
-						value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://apiv2.offersmeta.in https://click.creditsdeal.com; frame-ancestors 'none';",
+						value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://dsp.adomobi.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: https://dsp.adomobi.com; font-src 'self' data:; connect-src 'self' https://apiv2.offersmeta.in https://click.creditsdeal.com https://dsp.adomobi.com; frame-ancestors 'none';",
 					},
 					{
 						key: "X-Content-Type-Options",
